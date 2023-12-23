@@ -19,9 +19,10 @@ jobs:
     - name: ShowDestinations
       run: xcodebuild -showdestinations -scheme swift-tca-dependency-reminders
     - name: ShowSdks
-      run: xcodebuild -showdsdks -scheme swift-tca-dependency-reminders
+      run: xcodebuild -showsdks -scheme swift-tca-dependency-reminders
     - name: Build
 #      run: swift build -v
-      run: xcodebuild -sdk macosx14.2 -scheme swift-tca-dependency-reminders -destination 'platform=OS X,arch=x86_64'
+      run: xcodebuild -scheme swift-tca-dependency-reminders -destination 'platform=OS X,arch=x86_64'
     - name: Run tests
-      run: swift test -v
+#      run: swift test -v
+      run: xcodebuild -scheme swift-tca-dependency-reminders -destination 'platform=OS X,arch=x86_64' test

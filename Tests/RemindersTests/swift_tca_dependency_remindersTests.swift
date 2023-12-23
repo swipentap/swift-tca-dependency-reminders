@@ -1,5 +1,5 @@
 import XCTest
-@testable import swift_tca_dependency_reminders
+@testable import Reminders
 
 final class swift_tca_dependency_remindersTests: XCTestCase {
     func testExample() throws {

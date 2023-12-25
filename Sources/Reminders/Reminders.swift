@@ -42,10 +42,10 @@ extension Appl.Dependencies.Reminders: DependencyKey {
             }
         case .denied:
             throw Appl.Dependencies.Reminders.Errors.TodayError.accessDenied
-        /*case .fullAccess:
+        case .fullAccess:
             throw Appl.Dependencies.Reminders.Errors.TodayError.unknown
         case .writeOnly:
-            throw Appl.Dependencies.Reminders.Errors.TodayError.unknown*/
+            throw Appl.Dependencies.Reminders.Errors.TodayError.unknown
         @unknown default:
             throw Appl.Dependencies.Reminders.Errors.TodayError.unknown
         }
@@ -66,10 +66,10 @@ extension Appl.Dependencies.Reminders: DependencyKey {
             }
         case .denied:
             throw Appl.Dependencies.Reminders.Errors.TodayError.accessDenied
-        /*case .fullAccess:
+        case .fullAccess:
             throw Appl.Dependencies.Reminders.Errors.TodayError.unknown
         case .writeOnly:
-            throw Appl.Dependencies.Reminders.Errors.TodayError.unknown*/
+            throw Appl.Dependencies.Reminders.Errors.TodayError.unknown
         @unknown default:
             throw Appl.Dependencies.Reminders.Errors.TodayError.unknown
         }

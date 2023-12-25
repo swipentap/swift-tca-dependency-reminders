@@ -7,7 +7,7 @@ import ComposableArchitecture
 import Appl
 
 extension DependencyValues {
-    var reminders: Appl.Dependencies.Reminders {
+    public var reminders: Appl.Dependencies.Reminders {
         get { self[Appl.Dependencies.Reminders.self] }
         set { self[Appl.Dependencies.Reminders.self] = newValue }
     }
